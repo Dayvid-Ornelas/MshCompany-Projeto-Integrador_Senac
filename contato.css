@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: black;
     width: 100vw;
     height: 100vh;
     font-size: 24px;
@@ -14,12 +14,13 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px blue;
 }
 
 .logo-rock{
@@ -40,13 +41,13 @@ nav{
     padding: 6px;
     background-color: transparent;
     border: 2px solid transparent;
-    color: black;
+    color: white;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .buttonHeader:hover{
-    border-bottom: 2px solid black;}
+    border-bottom: 2px solid white;}
 
 a{
     text-decoration: none;
@@ -54,9 +55,7 @@ a{
 }
 
 main{
-    background-color:#0ec2cf ;
     flex-grow: 1;
-
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -79,6 +78,8 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 10 25px;
+    color: white;
+    box-shadow: 0 0 10px blue;
 }
 
 h1{
