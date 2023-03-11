@@ -120,11 +120,14 @@ i{
     cursor: pointer;
     color: white;
     background-color: rgb(31, 26, 26);
-    box-shadow: 0 0 1rem rgb(207, 102, 137);
 }
 
 .categoryCard:hover{
     border-bottom: 4px solid blue;
+    width: 285px;
+    height: 385px;
+    transition: 0.5s;
+    box-shadow: 0 0 1.5rem rgb(31, 26, 26) ;
 }
 
 a{
