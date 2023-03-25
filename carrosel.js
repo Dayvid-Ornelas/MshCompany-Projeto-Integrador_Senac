@@ -1,17 +1,16 @@
-const images = document.getElementById('produtos')
-const image = document.querySelectorAll('#produtos img')
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nextBtn = [...document.querySelectorAll('.next-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-let idx = 0;
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
-function carrossel(){
-    idx++
+    nextBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
 
-    if(idx > image.length -1){
-        idx = 0
-    }
-
-    images.style.transform = `translateX(${-idx * 700}px)`
-}
-
-setInterval(carrossel, 1500)
-
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
