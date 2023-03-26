@@ -78,7 +78,7 @@ i{
     transition: all 0.5s;
 }
 
-.sectionDescription{
+.sectionTitle{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -86,63 +86,150 @@ i{
     color: white;
 }
 
+.sectionDescription{
+    text-align: center;
+    color: white;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainContent sidebarContent";
+    padding: 20px;
+    flex: 1;
+    gap: 15px;
+}
+
 .mainCardImg{
     width: 100%;
-    height: 180px;
+    height: 226px;
     border-radius: 10px;
 }
 
-.carrossel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 10px;
-    width: 10px;
+.sidebarCardImg{
+    width: 100%;
+    border-radius: 10px;
 }
 
-.product-container{
+.categoryCard{
+    width: 280px;
+    height: 265px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.22s;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(31, 26, 26);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.categoryCard:hover{
+    border-bottom: 2px solid white;
+    width: 287px;
+    height: 265px;
+    transition: 0.5s;
+    box-shadow: 0 0 0.5rem white ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainContent{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 30px;
+    grid-area: mainContent;
+    padding: 10px;
+}
+
+.mainCardCategorias{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.mainCardCategorias::after{
+    content: "" ;
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: orangered;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mainCategoryCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 6px;
+}
+
+.sidebarContent{
+    background-color:rgb(31, 26, 26) ;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 16px;
+    min-width: 300px;
+    grid-area: sidebarContent;
+}
+
+.sidebarCard{
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 16px;
+}
+
+.sidebarCard:hover{
+    border-bottom: 1px solid white;
+    width: 90%;
+}
+
+.sidebarCardTiTle{
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    padding: 10px;
+}
+
+.logoFooter{
+    width: 180px;
+}
+
+.footer{
+    width: 100%;
+    min-width: 40px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px ;
+    text-decoration: none;
+    box-shadow: 0px 0px 1rem  blue;
+}
+
+.footerAnchor{
     color: white;
 }
 
-.img{
-    object-fit: cover;
-    height: 400px;
-    width: 800px;
-    background-color: rgb(31, 26, 26);
-    border-radius: 10px;
-}
-
-strong{
-    color: orangered;
-    font-size: 19px;
-}
-
-.discrip{
-    font-size: 15px;
-}
-
-.confirm{
+.direitofooter{
     display: flex;
     align-items: center;
-    text-align: center;
-    margin-top: 40px;
-    margin-left: 50px;
-}
-
-.button{
-    background-color: orangered;
-    border: transparent;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-
-.button:hover{
-    color: white;
-    transition: 0.28s;
 }
 
 @media (max-width: 768px){
