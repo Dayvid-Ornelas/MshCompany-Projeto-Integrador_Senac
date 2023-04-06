@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family= Abel & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= família= Orbitron:wght@600 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Quantico:ital,wght@0,700;1,400 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Turret+ Road :wght@400;500 & display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +12,6 @@
 
 body{
     background-color:black ;
-    
     min-height: 100vh;
 }
 
@@ -82,7 +86,6 @@ i{
 
 .sectionDescription{
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 20px;
     color: white;
@@ -121,7 +124,6 @@ h2::after{
 }
 
 .product-container{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);

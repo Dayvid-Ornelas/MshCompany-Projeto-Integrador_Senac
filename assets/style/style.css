@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family= Abel & display=swap') ;
+@import url('https://fonts.googleapis.com/css2?family= Orbitron :wght@600 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Quantico:ital,wght@0,700;1,400 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Turret+ Road :wght@400;500 & display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -80,7 +85,6 @@ i{
 
 .sectionTitle{
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 20px;
     color: white;
@@ -120,15 +124,14 @@ i{
     cursor: pointer;
     color: white;
     background-color: rgb(31, 26, 26);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .categoryCard:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid purple;
     width: 287px;
     height: 265px;
     transition: 0.5s;
-    box-shadow: 0 0 0.5rem white ;
+    box-shadow: 0 0 1rem purple ;
 }
 
 a{
@@ -148,7 +151,6 @@ a{
 
 .mainCardCategorias{
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     position: relative;
 }
@@ -166,9 +168,64 @@ a{
 }
 
 .mainCategoryCardTitle{
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 6px;
+}
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 50vw;
+    background-color: black;
+    margin: 1vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px purple;
+}
+
+.container-itens{
+    display: flex;
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item img{
+    height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.action-buttons{
+    font: bold 30px sans-serif;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: transparent;
+    user-select: none;
+}
+
+.action-buttons:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.item{
+    height: 50vh;
+    width: 50vw;
+    transition: all 0.7s;
+}
+
+.item:first-child{
+    margin-left: -100%;
+    transition: all 0.7s;
 }
 
 .sidebarContent{
@@ -199,7 +256,6 @@ a{
 }
 
 .sidebarCardTiTle{
-    font-family:Arial, Helvetica, sans-serif ;
     text-align: center;
     padding: 10px;
 }
