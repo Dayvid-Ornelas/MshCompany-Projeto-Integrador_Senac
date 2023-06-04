@@ -128,10 +128,9 @@ i{
 
 .categoryCard:hover{
     border-bottom: 2px solid purple;
-    width: 287px;
-    height: 265px;
+    transform: scale(1.1);
     transition: 0.5s;
-    box-shadow: 0 0 1rem purple ;
+    box-shadow: 10px 10px 10px purple,-10px -10px 10px purple;
 }
 
 a{
@@ -256,6 +255,7 @@ a{
 }
 
 .sidebarCardTiTle{
+    color: white;
     text-align: center;
     padding: 10px;
 }

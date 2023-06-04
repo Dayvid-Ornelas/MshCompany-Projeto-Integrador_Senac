@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background-color:black ;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoNavBar{
+    width: 250px;
+}
+
+.header{
+    width: 100%;
+    min-height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 8px 15px;
+    box-shadow: 0 0 1rem blue;
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 15px;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.naveBtn{
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.naveBtn:hover{
+    border-bottom: 2px solid white;
+}
+
+i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.Menu{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.5s;
+}
+
+.sectionTitle{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.sectionDescription{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.gridContainer{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    gap: 15px;
+}
+
+.mainCardImg{
+    width: 100%;
+    height: 226px;
+    border-radius: 10px;
+}
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 30px;
+    grid-area: mainContent;
+    padding: 10px;
+}
+
+.sobre{
+    color: white;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    width: 50vh;  
+    font-size: 25px;
+}
+
+.imgGrupo{
+    padding-top: 30px;
+    width: 1000px;
+}
+
+.fotoPerfil{
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    gap: 100px;
+}
+
+.cartao {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: rgb(31, 26, 26) ;
+    font-family: 'Nova Square', cursive;
+    font-family: 'Roboto Flex', sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #333;
+}
+
+.cartao:hover {
+    transition: 0.7s;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px purple,-10px -10px 20px purple;
+}
+
+.titulo-cartao {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.paragrafo-cartao {
+    text-align: left;
+    color: white;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;        
+}
+
+.logoFooter{
+    width: 180px;
+}
+
+.footer{
+    width: 100%;
+    min-width: 40px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px ;
+    text-decoration: none;
+    box-shadow: 0px 0px 1rem  blue;
+}
+
+.footerAnchor{
+    color: white;
+}
+
+.direitofooter{
+    display: flex;
+    align-items: center;
+}
